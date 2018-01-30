@@ -60,7 +60,7 @@ class ListAdapter(context: Context) : BaseRecyclerViewAdapter<UserModel, UserVie
 	        implementation 'com.github.elfatah:BaseViewExample:v1.0.0'
 	}
 	
-#License
+# License
 
 Copyright (C) 2018 Hilman N Fatah
 
