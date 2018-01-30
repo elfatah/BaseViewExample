@@ -17,5 +17,6 @@ class UserViewHolder(itemView: View,
         itemView.tvNama.text = data.name
         itemView.tvAlamat.text = data.alamat
         itemView.setOnClickListener { onClick(it) }
+        itemView.setOnLongClickListener { onLongClick(it) }
     }
 }
