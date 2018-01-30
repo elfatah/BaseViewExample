@@ -1,4 +1,8 @@
+![Release](https://jitpack.io/v/elfatah/BaseViewExample.svg)
+
+
 # BaseViewExample
+
 Base recyclerview adapter and viewholder to reduce code boilerplate in Kotlin.
 
 Based on https://github.com/derohimat/android-base-mvp
