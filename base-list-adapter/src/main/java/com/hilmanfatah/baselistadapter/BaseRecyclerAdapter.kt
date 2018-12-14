@@ -20,7 +20,7 @@ abstract class BaseRecyclerViewAdapter<Data, Holder : BaseItemViewHolder<Data>>(
 
     protected abstract fun getItemResourceLayout(viewType: Int): Int
 
-    abstract override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): Holder
+    abstract override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder
 
     override fun onBindViewHolder(holder: Holder, position: Int) =
             holder.bind(mDatas[position], position)

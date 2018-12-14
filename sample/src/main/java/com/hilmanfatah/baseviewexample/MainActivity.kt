@@ -17,21 +17,21 @@ class MainActivity : AppCompatActivity() {
         val listAdapter = ListAdapter(this)
 
         listAdapter.addData(UserModel("Ahmad", "Subang"))
-        listAdapter.addData(UserModel("Waluyo", "Bandung"))
+        listAdapter.addData(UserModel2("Waluyo", "Bandung"))
         listAdapter.addData(UserModel("Bambang", "Cicaheum"))
-        listAdapter.addData(UserModel("Mahmud", "Jakarta"))
+        listAdapter.addData(UserModel2("Mahmud", "Jakarta"))
         listAdapter.addData(UserModel("Pahmud", "Cileduk"))
 
         listAdapter.mItemClickListener = object : BaseRecyclerViewAdapter.OnItemClickListener {
             override fun onItemClick(view: View, position: Int) {
-                Toast.makeText(this@MainActivity, "Klik " + listAdapter.mDatas[position].name, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Klik " /*+ listAdapter.mDatas[position].name*/, Toast.LENGTH_SHORT).show()
             }
 
         }
 
         listAdapter.mLongItemClickListener = object : BaseRecyclerViewAdapter.OnLongItemClickListener {
             override fun onLongItemClick(view: View, position: Int) {
-                Toast.makeText(this@MainActivity, "Long klik " + listAdapter.mDatas[position].name, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Long klik " /*+ listAdapter.mDatas[position].name*/, Toast.LENGTH_SHORT).show()
             }
 
 
