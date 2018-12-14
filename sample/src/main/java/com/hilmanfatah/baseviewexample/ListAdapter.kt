@@ -10,6 +10,6 @@ import com.hilmanfatah.baselistadapter.BaseRecyclerViewAdapter
 class ListAdapter(context: Context) : BaseRecyclerViewAdapter<UserModel, UserViewHolder>(context) {
     override fun getItemResourceLayout(viewType: Int): Int = R.layout.user_item_view
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): UserViewHolder =
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder =
             UserViewHolder(getView(parent!!, viewType), mItemClickListener, mLongItemClickListener)
 }
